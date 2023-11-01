@@ -1,11 +1,12 @@
 node {
-    def mvnHome = tool 'M3'
+##    def mvnHome = tool 'M3'
 
     stage('Checkout') {
         checkout scm
     }
 
     stage('Build') {
-        sh "${mvnHome}/bin/mvn -B package"
+  ##      sh "${mvnHome}/bin/mvn -B package"
+  	echo "Hi from build block"
     }
 }
