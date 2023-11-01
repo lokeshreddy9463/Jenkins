@@ -1,6 +1,6 @@
 pipeline {
 	agent any
-
+  stages{
     stage('Checkout') {
         checkout scm
     }
@@ -15,7 +15,8 @@ pipeline {
     
     }
 
-    post {
+    post 
+    {
     	echo "Hi from post block"
 	always {
 		echo "Hi from always block"
@@ -23,6 +24,7 @@ pipeline {
 	success{
 	echo "Hi from success block"
 	}
-  }    
+  } 
+  }
 }
 
