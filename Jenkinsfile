@@ -22,6 +22,5 @@ node {
 	success{
 	echo "Hi from success block"
 	}
-    }
-    
+  }    
 }
